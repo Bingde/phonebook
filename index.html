@@ -49,16 +49,7 @@ background-color:e9e9e9;
 }
 </style>
 </head>
-<<<<<<< HEAD
 <body>
-=======
-
-<<<<<<< HEAD
-<body onLoad="Show()">
->>>>>>> origin/master
-=======
-<body >
->>>>>>> 9b7910c32bfb996cd3c275c86dbd9724dea7752a
 <div data-role="page" id="page1">
    <div id="ads" style="width:90%;height:30px" ><div>
     <div data-role="header" ><h1>蒙特利尔黄页</h1>  </div>
@@ -865,7 +856,6 @@ background-color:e9e9e9;
 	 <a href="#pageone" data-role="button" data-inline="false" data-icon="delete" data-rel="close" data-theme="b" >Close</a>
   </div> 
   
-<<<<<<< HEAD
    <div data-role="panel" class = "panel" id="46"> 
 	<button>Share</button>
     <h2>AUTO H.K.汽车维修</h2>
@@ -3491,15 +3481,12 @@ background-color:e9e9e9;
             <div class="ui-block-b"><a id="btnCollapse" class="ui-btn ui-corner-all collapseExpand">Collapse All</a>
 </div>
         </div>
-=======
->>>>>>> origin/master
    <div class="ui-grid-solo ui-mini" >
             <div class="ui-block-a">
                 <label>
                     <input type="checkbox" name="chkAnim" id="chkAnim" />使用动画格式收缩和扩展</label>
             </div>
         </div>
-<<<<<<< HEAD
 	 <!-- /listview -->
       <ul data-role="listview" data-inset="true" data-divider-theme="a">
 		  <li data-role="list-divider">设置</li>
@@ -3515,99 +3502,6 @@ background-color:e9e9e9;
     </div> 
 </div> 
 
-=======
-		
-		
-        <!-- /listview -->
-        
-        <ul data-role="listview" data-inset="true" data-divider-theme="a">
-            <li data-role="list-divider">Mail</li>
-            <li><a href="#">Inbox</a></li>
-            <li><a href="#">Outbox</a></li>
-            <li data-role="list-divider">Contacts</li>
-            <li><a href="#">Friends</a></li>
-            <li><a href="#">Work</a></li>
-        </ul>
-    </div>
-</div>
-<<<<<<< HEAD
-<script>
- function onLoad() {
-     
-      if(( /(ipad|iphone|ipod|android|windows phone)/i.test(navigator.userAgent) )) {
-           document.addEventListener('deviceready', initApp, false);
-			document.getElementById("demo1").innerHTML = localtime;
-      } else {
-        initApp();
-   }
-		
-  }
-	
-  var admobid = {};
-   if( /(android)/i.test(navigator.userAgent) ) { // for android
-      admobid = {
-          banner: 'ca-app-pub-7973587087974413/2609977283', // or DFP format "/6253334/dfp_example_ad"
-          interstitial: 'ca-app-pub-7973587087974413/2821153288'
-      };
-    } else if(/(ipod|iphone|ipad)/i.test(navigator.userAgent)) { // for ios
-      admobid = {
-           banner: 'ca-app-pub-xxx/zzz', // or DFP format "/6253334/dfp_example_ad"
-           interstitial: 'ca-app-pub-xxx/kkk'
-       };
-  } else { // for windows phone
-        admobid = {
-          banner: 'ca-app-pub-xxx/zzz', // or DFP format "/6253334/dfp_example_ad"
-          interstitial: 'ca-app-pub-xxx/kkk'
-       };
-  }
-	
-	  function initApp() {
-		if (! AdMob ) { alert( 'admob plugin not ready' ); return; }
-		initAd();
-		     createSelectedBanner();
-   }
-   
- function initAd(){
-      var defaultOptions = {
-          // bannerId: admobid.banner,
-          // interstitialId: admobid.interstitial,
-            // adSize: 'SMART_BANNER',
-          // width: integer, // valid when set adSize 'CUSTOM'
-          // height: integer, // valid when set adSize 'CUSTOM'
-          position: AdMob.AD_POSITION.TOP_CENTER,
-        // offsetTopBar: false, // avoid overlapped by status bar, for iOS7+
-        bgColor: 'white', // color name, or '#RRGGBB'
-            // x: integer,		// valid when set position to 0 / POS_XY
-           // y: integer,		// valid when set position to 0 / POS_XY
-            isTesting: true, // set to true, to receiving test ad for testing purpose
-            // autoShow: true // auto show interstitial ad when loaded, set to false if prepare/show
-        };
-        AdMob.setOptions( defaultOptions );
-    }
-    
-  function Show(){
-   //AdMob.setOptions( defaultOptions );
-    AdMob.createBanner( {
-    adId:admobid.banner, 
-    adSize:'CUSTOM',  width:270, height:40, 
-    overlap:false, 
-    position:AdMob.AD_POSITION.TOP_CENTER, 
-    autoShow:true} );
-	
-  }
-  function onResize(){
-        var s = document.getElementById('sizeinfo');
-        s.innerHTML = "web view: " + window.innerWidth + " x " + window.innerHeight;
-    }
-    function Showbig(){
-   AdMob.prepareInterstitial({
-    adId: admobid.interstitial,
-   autoShow: true});}
-</script>
->>>>>>> origin/master
-=======
-
->>>>>>> 9b7910c32bfb996cd3c275c86dbd9724dea7752a
 
 </body>
 </html>
